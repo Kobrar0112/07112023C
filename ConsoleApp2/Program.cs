@@ -1,4 +1,4 @@
-﻿using System.Text.Json;
+using System.Text.Json;
 using System.Xml.Serialization;
 using ConsoleApp1;
 
@@ -16,32 +16,7 @@ class Program
         {
             string[] lines = File.ReadAllLines(path);
 
-            foreach (string line in lines)
-            {
-                Human Roman = new Human
-                {
-                Name = "Абрамов Роман",
-                Age = 16,
-                MyColor = new string[] { "Зелёный", "Синий"}
-            };
-                Human Roman1 = new Human
-                {
-                    Name = "Дмитриев Роман",
-                    Age = 16,
-                    MyColor = new string[] { "Зелёный", "Синий"}
-                };
-                Human Roman2 = new Human
-                {
-                    Name = "Александров Роман",
-                    Age = 16,
-                    MyColor = new string[] {"Зелёный", "Синий"}
-                };
-
-                List<Human> hum = new List<Human>();
-                hum.Add(Roman);
-                hum.Add(Roman1);
-                hum.Add(Roman2);
-            }
+           
             
         }
         else if (path.EndsWith(".json"))
